@@ -271,15 +271,14 @@ function createTextBubble() {
   }, 10000);
 }
 
+  // Eliminamos la burbuja automáticamente después de 8 segundos
+  setTimeout(() => {
+    bubble.remove();
+  }, 8000);
+}
+
 // Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
 setInterval(createTextBubble, 1000);
-
-        </script>
-    </body>
-
-
-// Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
-setInterval(createTextBubble, 800);
 
         </script>
     </body>
