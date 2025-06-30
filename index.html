@@ -14,7 +14,7 @@
     height: 100vh;
     margin: 0;
     background: url('https://img.freepik.com/free-vector/powder-pastel-with-hand-drawn-elements-wallpaper_52683-40631.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
                 background-position: center center;
@@ -266,12 +266,6 @@ function createTextBubble() {
       bubble.style.top = "10px";
     }
   }, 10);
-
-  
-  setTimeout(() => {
-    bubble.remove();
-  }, 10000);
-}
 
   // Eliminamos la burbuja automáticamente después de 8 segundos
   setTimeout(() => {
