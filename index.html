@@ -214,6 +214,9 @@ const messages = [
   "Siempre pienso en ti 💭",
   "Mi corazón es tuyo 💘",
   "Gracias por elegirme ❤️"
+"Amo estar a tu lado ♥️"
+"Quiero regalarte el mundo ♥️"
+"Me muero por estar contigo ♥️"
 ];
 
 // Función que crea una burbuja de texto con un mensaje aleatorio
@@ -228,8 +231,8 @@ function createTextBubble() {
   bubble.innerText = messages[Math.floor(Math.random() * messages.length)];
 
   // Calculamos una posición aleatoria dentro de la pantalla (entre 10% y 90%)
-  const left = Math.random() * 50 + 5;
-  const top = Math.random() * 50 + 5;
+  const left = Math.random() * 40 + 5;
+  const top = Math.random() * 40 + 5;
 
   // Establecemos la posición absoluta y aplicamos las coordenadas calculadas
   bubble.style.position = "absolute";
