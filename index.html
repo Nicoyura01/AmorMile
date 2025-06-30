@@ -229,8 +229,8 @@ function createTextBubble() {
   bubble.innerText = messages[Math.floor(Math.random() * messages.length)];
 
   // Calculamos una posición aleatoria dentro de la pantalla (entre 10% y 90%)
-  const left = Math.random() * 40 + 5;
-  const top = Math.random() * 70 + 5;
+  const left = Math.random() * 35 + 5;
+  const top = Math.random() * 80 + 5;
 
   // Establecemos la posición absoluta y aplicamos las coordenadas calculadas
   bubble.style.position = "absolute";
@@ -264,7 +264,7 @@ function createTextBubble() {
 
     // Si se va muy arriba, la bajamos un poco
     if (rect.top < 0) {
-      bubble.style.top = "10px";
+      bubble.style.top = "15px";
     }
   }, 10);
 
