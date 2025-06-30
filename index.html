@@ -58,7 +58,7 @@
     z-index: -1;
     font-size: 50px;
     color: #ff99b6;
-    animation: floatHearts 8s ease-in-out infinite;
+    animation: floatHearts 5s ease-in-out infinite;
 }
 
 @keyframes floatHearts {
@@ -67,10 +67,10 @@
     100% { transform: translateY(0) scale(1); opacity: 1; }
 }
 
-.hearts:nth-child(2) { left: 25%; animation-duration: 9s; }
-.hearts:nth-child(3) { left: 40%; animation-duration: 15s; }
-.hearts:nth-child(4) { left: 60%; animation-duration: 17s; }
-.hearts:nth-child(5) { left: 75%; animation-duration: 18s; }
+.hearts:nth-child(2) { left: 25%; animation-duration: 6s; }
+.hearts:nth-child(3) { left: 40%; animation-duration: 7s; }
+.hearts:nth-child(4) { left: 60%; animation-duration: 8s; }
+.hearts:nth-child(5) { left: 75%; animation-duration: 9s; }
 
 .text-container {
     position: absolute;
@@ -82,7 +82,7 @@
     font-size: 18px;
     font-family: 'Cursive', sans-serif;
     color: #d63384;
-    animation: fadeInText 10s ease-in-out infinite;
+    animation: fadeInText 6s ease-in-out infinite;
     z-index: 1;
     padding: 10px 20px;
     border-radius: 25px;
@@ -92,12 +92,12 @@
     word-wrap: break-word;
 }
 
-.charming-text:nth-child(1) { top: 15%; left: 5%; text-align: left; animation-duration: 10s; }
-.charming-text:nth-child(2) { top: 25%; left: 5%; text-align: left; animation-duration: 12s; }
-.charming-text:nth-child(3) { top: 35%; left: 5%; text-align: left; animation-duration: 14s; }
-.charming-text:nth-child(4) { top: 15%; right: 5%; text-align: right; animation-duration: 10s; }
-.charming-text:nth-child(5) { top: 25%; right: 5%; text-align: right; animation-duration: 12s; }
-.charming-text:nth-child(6) { top: 35%; right: 5%; text-align: right; animation-duration: 15s; }
+.charming-text:nth-child(1) { top: 15%; left: 5%; text-align: left; animation-duration: 6s; }
+.charming-text:nth-child(2) { top: 25%; left: 5%; text-align: left; animation-duration: 7s; }
+.charming-text:nth-child(3) { top: 35%; left: 5%; text-align: left; animation-duration: 8s; }
+.charming-text:nth-child(4) { top: 15%; right: 5%; text-align: right; animation-duration: 6s; }
+.charming-text:nth-child(5) { top: 25%; right: 5%; text-align: right; animation-duration: 7s; }
+.charming-text:nth-child(6) { top: 35%; right: 5%; text-align: right; animation-duration: 8s; }
 
 @keyframes fadeInText {
     0% { opacity: 0; }
@@ -108,7 +108,7 @@
 .flowers {
     position: absolute;
     bottom: 10px;
-    animation: flowerAnimation 7s ease-in-out infinite;
+    animation: flowerAnimation 5s ease-in-out infinite;
     font-size: 30px;
 }
 
@@ -118,18 +118,18 @@
     100% { transform: translateY(0); opacity: 0; }
 }
 
-.flowers:nth-child(1) { left: 10%; animation-duration: 10s; }
-.flowers:nth-child(2) { left: 30%; animation-duration: 13s; }
-.flowers:nth-child(3) { left: 50%; animation-duration: 16s; }
-.flowers:nth-child(4) { left: 70%; animation-duration: 19s; }
-.flowers:nth-child(5) { left: 90%; animation-duration: 23s; }
+.flowers:nth-child(1) { left: 10%; animation-duration: 6s; }
+.flowers:nth-child(2) { left: 30%; animation-duration: 7s; }
+.flowers:nth-child(3) { left: 50%; animation-duration: 8s; }
+.flowers:nth-child(4) { left: 70%; animation-duration: 9s; }
+.flowers:nth-child(5) { left: 90%; animation-duration: 10s; }
 
 .bubbles {
     position: absolute;
     bottom: 10px;
     font-size: 25px;
     color: #ff99b6;
-    animation: bubbleAnimation 10s ease-in-out infinite;
+    animation: bubbleAnimation 7s ease-in-out infinite;
 }
 
 @keyframes bubbleAnimation {
@@ -138,11 +138,11 @@
     100% { transform: translateY(0) scale(1); opacity: 0.8; }
 }
 
-.bubbles:nth-child(1) { left: 10%; animation-duration: 12s; }
-.bubbles:nth-child(2) { left: 30%; animation-duration: 15s; }
-.bubbles:nth-child(3) { left: 50%; animation-duration: 18s; }
-.bubbles:nth-child(4) { left: 70%; animation-duration: 21s; }
-.bubbles:nth-child(5) { left: 90%; animation-duration: 25s; }
+.bubbles:nth-child(1) { left: 10%; animation-duration: 8s; }
+.bubbles:nth-child(2) { left: 30%; animation-duration: 9s; }
+.bubbles:nth-child(3) { left: 50%; animation-duration: 10s; }
+.bubbles:nth-child(4) { left: 70%; animation-duration: 11s; }
+.bubbles:nth-child(5) { left: 90%; animation-duration: 12s; }
 
 #bubbles-text {
     position: absolute;
@@ -162,7 +162,7 @@
     padding: 10px 20px;
     border-radius: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: floatText 12s ease-in-out forwards;
+    animation: floatText 8s ease-in-out forwards;
     white-space: nowrap;
 }
 
@@ -202,8 +202,10 @@
             // Lista de mensajes románticos que aparecerán en burbujas
 const messages = [
   "Te amo muchísimo ❤️",
+  "Gracias por estar en mi vida 🌟",
   "Eres mi Universo💕",
   "Juntos por siempre 🥰",
+  "Mile Y Nico 💖",
   "Tu sonrisa me ilumina 💫",
   "Tus Ojos me enamoran 😍",
   "Cada momento contigo es mágico ✨",
@@ -224,8 +226,8 @@ function createTextBubble() {
   bubble.innerText = messages[Math.floor(Math.random() * messages.length)];
 
   // Calculamos una posición aleatoria dentro de la pantalla (entre 10% y 90%)
-  const left = Math.random() * 60 + 5;
-  const top = Math.random() * 60 + 5;
+  const left = Math.random() * 70 + 5;
+  const top = Math.random() * 70 + 5;
 
   // Establecemos la posición absoluta y aplicamos las coordenadas calculadas
   bubble.style.position = "absolute";
@@ -266,8 +268,15 @@ function createTextBubble() {
   // Eliminamos la burbuja automáticamente después de 8 segundos
   setTimeout(() => {
     bubble.remove();
-  }, 4000);
+  }, 8000);
 }
+
+// Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
+setInterval(createTextBubble, 900);
+
+        </script>
+    </body>
+
 
 // Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
 setInterval(createTextBubble, 800);
